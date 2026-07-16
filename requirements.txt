@@ -1,0 +1,17 @@
+# This venv is created with --system-site-packages against
+# ~/comfy-env, so torch / transformers / accelerate / bitsandbytes /
+# huggingface_hub are already inherited from there (see
+# venv/lib/python3.12/site-packages/comfy_env.pth). Do NOT pip install those
+# here or into comfy-env directly - only add packages this workspace needs
+# that comfy-env does not already provide.
+#
+# diffusers is pinned to 0.39.0 specifically to *shadow* comfy-env's 0.36.0
+# (which lacks ZImageInpaintPipeline) with a venv-local copy - this venv's
+# site-packages takes priority over the inherited comfy-env ones.
+
+diffusers==0.39.0
+fastapi
+uvicorn[standard]
+python-multipart
+httpx
+gradio>=6.0
