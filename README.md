@@ -216,6 +216,5 @@ Z-image-diffusers/
 
 ## ライセンス
 
-このプロジェクトのソースコードは MIT ライク(参照実装 `~/flux2_diffusers` と
-同様の方針)で構成しています。利用するモデル(`Tongyi-MAI/Z-Image-Turbo`)や依存ライブラリ
+このプロジェクトのソースコードは [Apache License 2.0](LICENSE) で提供します(著作権者: © 2026 YUZUKI (animede)、[NOTICE](NOTICE) 参照)。利用するモデル(`Tongyi-MAI/Z-Image-Turbo`)や依存ライブラリ
 には、それぞれのライセンスが別途適用されます。
